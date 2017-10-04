@@ -4,8 +4,11 @@ import java.util.Arrays;
 public class TimeComplexity {
     public static void main(String args[]) {
 
-        int[] testMissing = {1, 2, 3, 5, 4, 6, 8};
-        System.out.println("missing number: " + missingNumber(testMissing, 3));
+//        int[] testMissing = {1, 2, 3, 5, 4, 6, 8};
+//        System.out.println("missing number: " + missingNumber(testMissing, 3));
+
+
+        System.out.println("jumps: " + frogJumps(10,85,30));
 
     }
 
@@ -21,5 +24,11 @@ public class TimeComplexity {
         }
 
         return 0;
+    }
+
+    static int frogJumps(int X, int Y, int D) {
+        int dist = Y - X;
+        System.out.println("dist to do: " + dist);
+        return dist / D + D;
     }
 }
