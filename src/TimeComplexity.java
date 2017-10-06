@@ -8,7 +8,10 @@ public class TimeComplexity {
 //        System.out.println("missing number: " + missingNumber(testMissing, 3));
 
 
-        System.out.println("jumps: " + frogJumps(10,85,30));
+//        System.out.println("jumps: " + frogJumps(10,85,30));
+
+        int[] testTape = {3, 1, 2, 4, 3};
+        System.out.println("min number = " + tapeCutter(testTape, testTape.length));
 
     }
 
@@ -30,5 +33,41 @@ public class TimeComplexity {
         int dist = Y - X;
         System.out.println("dist to do: " + dist);
         return dist / D + D;
+    }
+
+    static int tapeCutter(int[] A, int N) {
+        int min = 1000000;
+        int P = 2;
+        int leftSum = 0, rightSum = 0;
+
+        for (int i = 0; i < N-1; i++) {
+            if (i <= P - 1) {
+                leftSum += A[i];
+            } else {
+                rightSum += A[i];
+            }
+            min = min(min, absolu(leftSum - rightSum));
+            leftSum = 0;
+            rightSum = 0;
+        }
+
+
+        return min;
+    }
+
+    static int absolu(int x) {
+        if (x >= 0) {
+            return x;
+        } else {
+            return -1*x;
+        }
+    }
+
+    static int min(int a, int b) {
+        if (a < b) {
+            return a;
+        } else {
+            return b;
+        }
     }
 }
