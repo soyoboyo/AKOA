@@ -3,9 +3,8 @@ import java.util.Arrays;
 public class L4CountingElements {
 
     public static void main(String args[]) {
-        int[] permTest = {1,2,3,4};
+//        int[] permTest = {1,2,3,4};System.out.println("is permutation? " + isPerm(permTest, permTest.length));;
 
-        System.out.println("is permutation? " + isPerm(permTest, permTest.length));;
 
     }
 
