@@ -5,9 +5,10 @@ public class L4CountingElements {
     public static void main(String args[]) {
 //        int[] permTest = {1,2,3,4};System.out.println("is permutation? " + isPerm(permTest, permTest.length));;
 
-        int[] leafTest = {2, 3, 4, 6, 2, 2, 2, 2, 1, 1, 1, 1, 5};
-        System.out.println("jump time: " + frog(leafTest, 6));
+//        int[] leafTest = {2, 3, 4, 6, 2, 2, 2, 2, 1, 1, 1, 1, 5};System.out.println("jump time: " + frog(leafTest, 6));
 
+        int[] counterTest = {3,4,4,6,1,4,4};
+        System.out.println(Arrays.toString(counters(counterTest, 5)));
     }
 
     public static boolean isPerm(int[] A, int N) {
@@ -49,7 +50,23 @@ public class L4CountingElements {
 
     public static int[] counters(int[] A, int N) {
 
-        
+        int[] counters = new int[N];
+        int max = 0;
+
+        for (int i = 0; i < A.length; i++) {
+
+            if (A[i] == N + 1) {
+                for (int j = 0; j < counters.length; j++) {
+                    counters[j] = max;
+                }
+            } else {
+                counters[A[i]-1]++;
+                max = Math.max(counters[A[i]-1], max);
+            }
+        }
+
+
+        return counters;
     }
 
 }
