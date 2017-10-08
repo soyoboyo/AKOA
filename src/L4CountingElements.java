@@ -51,11 +51,18 @@ public class L4CountingElements {
     public static int[] counters(int[] A, int N) {
 
         int[] counters = new int[N];
-        int max = 0;
+        int max = 0, all = 0, last = 0;
+
+        for (int i = 0; i < A.length; i++) {
+            if (A[i] == N+1) {
+
+            }
+        }
 
         for (int i = 0; i < A.length; i++) {
 
             if (A[i] == N + 1) {
+                all = max;
                 for (int j = 0; j < counters.length; j++) {
                     counters[j] = max;
                 }
