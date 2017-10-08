@@ -21,8 +21,8 @@ public class TimeComplexity {
             System.out.println("A[" + i + "] = " + A[i]);
         }
         for (int i = 0; i < A.length; i++) {
-            if (i+1 != A[i]) {
-                return i+1;
+            if (i + 1 != A[i]) {
+                return i + 1;
             }
         }
 
@@ -40,13 +40,13 @@ public class TimeComplexity {
         int P = 2;
         int leftSum = 0, rightSum = 0;
 
-        for (int i = 0; i < N-1; i++) {
+        for (int i = 0; i < N - 1; i++) {
             if (i <= P - 1) {
                 leftSum += A[i];
             } else {
                 rightSum += A[i];
             }
-            min = min(min, absolu(leftSum - rightSum));
+            min = Math.min(min, absolu(leftSum - rightSum));
             leftSum = 0;
             rightSum = 0;
         }
@@ -59,15 +59,8 @@ public class TimeComplexity {
         if (x >= 0) {
             return x;
         } else {
-            return -1*x;
+            return -1 * x;
         }
     }
 
-    static int min(int a, int b) {
-        if (a < b) {
-            return a;
-        } else {
-            return b;
-        }
-    }
 }
