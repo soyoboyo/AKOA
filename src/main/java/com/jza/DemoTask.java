@@ -2,7 +2,7 @@ package com.jza;
 
 import java.util.Arrays;
 
-public class DemoTest {
+public class DemoTask {
 
     public static void main(String args[]) {
 
