@@ -1,16 +1,15 @@
 package com.jza;
 
+import com.jza.current.Nokia;
+
 import java.util.Arrays;
 
 public class Main {
 
 	public static void main(String[] args) {
-//        int[] test = {1, 1, 2, 3, 3, 5, 7, 7, 5, 2, 4, 3, 3};
-//        System.out.println("number without pair: " + strangerNumber(test));
+		int[] t3 = {-1, 3, 4, 0, 1, 5, 6};
+		Nokia.linkedList(t3);
 
-
-		int[] rotest = {3, 8, 9, 7, 6};
-		rotateArray(rotest, 3);
 	}
 
 	public static int binaryGap(int N) {

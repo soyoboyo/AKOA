@@ -1,4 +1,4 @@
-package com.jza;
+package com.jza.lessons;
 
 import java.util.Arrays;
 

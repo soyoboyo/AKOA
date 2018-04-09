@@ -1,16 +1,8 @@
-package com.jza;
+package com.jza.lessons;
 
 import java.util.Arrays;
 
 public class DemoTask {
-
-    public static void main(String args[]) {
-
-        int[] demoTest = {1, 3, 6, 4, 1, 2};
-        int[] demoTest2 = {1,2,3};
-        int[] demoTest3 = {-1,-2,-3};
-        System.out.println("min number: " + findSmall(demoTest3));
-    }
 
     public static int findSmall(int []A) {
 

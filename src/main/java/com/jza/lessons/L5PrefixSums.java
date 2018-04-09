@@ -1,4 +1,4 @@
-package com.jza;
+package com.jza.lessons;
 
 import com.sun.javafx.scene.control.skin.VirtualFlow;
 

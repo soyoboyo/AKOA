@@ -1,14 +1,6 @@
-package com.jza;
-
-import com.sun.org.apache.xpath.internal.operations.Number;
+package com.jza.serious;
 
 public class Slices {
-
-    public static void main(String args[]) {
-
-        int[] avgTest = {-1, 0, 1, 2};
-        System.out.println(slices(avgTest));
-    }
 
     public static int slices(int[] A) {
         int slices = 0;
