@@ -1,27 +1,29 @@
 package com.jza.challenges.y2019;
 
+import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Set;
+import java.util.Map;
 
 public class Yttrium2019 {
 
 	static int removingSegment(String s, int K) {
 		Character first = s.charAt(0);
 
-		if (verifyK(s, K)) {
-			return 0;
-		} else {
-			return -1;
-		}
-	}
-
-	private static Boolean verifyK(String s, int K) {
-		Set<Character> letters = new HashSet<>();
+		Map<Character, Integer> letters = new HashMap<>();
 		for (int i = 0; i < s.length(); i++) {
-			letters.add(s.charAt(i));
+			putChar(letters, s.charAt(i));
 		}
 		if (letters.size() < K) {
-			return false;
-		} else return true;
+			return -1;
+		} else return 0;
+	}
+
+	public static void putChar(Map<Character, Integer> letters, Character c){
+		if(letters.get(c) == null){
+			letters.put(c, 1);
+		} else {
+			Integer old = letters.get(c);
+			letters.put(c, old + 1);
+		}
 	}
 }

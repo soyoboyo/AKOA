@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5088822e-1d6b-4c55-aabf-fa25e6af7a83" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jza/FizzBuzz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jza/challenges/y2018/BalancedSubstring2018.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jza/challenges/y2018/CuttingComplexity2018.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jza/challenges/y2018/OldKing2018.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jza/challenges/y2018/TrailingZeros2018.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jza/challenges/y2018/ZalandoCards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jza/challenges/y2019/Yttrium2019.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jza/current/Nokia2ndTry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jza/recruitment/NokiaVol2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/nested_lists.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jza/FizzBuzzTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/BalancedSubstring2018Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/CuttingComplexity2018Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/OldKing2018Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/ZalandoCardsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2019/Yttrium2019Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jza/current/TrailingZeros2018Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jza/recruitment/Nokia2ndTryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jza/recruitment/NokiaVol2Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jza/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jza/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jza/current/Nokia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jza/recruitment/Nokia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jza/serious/Slices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jza/recruitment/Slices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jza/current/NokiaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jza/recruitment/NokiaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jza/serious/SlicesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jza/recruitment/SlicesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jza/challenges/y2019/Yttrium2019.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jza/challenges/y2019/Yttrium2019.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/CuttingComplexity2018Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/CuttingComplexity2018Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/ZalandoCardsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/ZalandoCardsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2019/Yttrium2019Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2019/Yttrium2019Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jza/challenges/y2019/Yttrium2019.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="18">
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jza/lessons/L5PrefixSums.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="702">
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -64,18 +42,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/jza/challenges/y2019/Yttrium2019Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="360">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/CuttingComplexity2018Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/ZalandoCardsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,7 +103,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/jza/DemoTaskTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jza/Slices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jza/lessons/L4CountingElements.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jza/lessons/L5PrefixSums.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jza/serious/Nokia.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jza/serious/Slices.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jza/current/SlicesTest.java" />
@@ -124,7 +116,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/jza/current/NokiaTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jza/current/Nokia.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jza/challenges/y2018/CuttingComplexity2018.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/CuttingComplexity2018Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jza/current/NokiaVol2Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jza/current/NokiaVol2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jza/recruitment/Nokia.java" />
@@ -138,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/jza/recruitment/SlicesTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jza/recruitment/Slices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jza/challenges/y2018/ZalandoCards.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/ZalandoCardsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/OldKing2018Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jza/challenges/y2018/OldKing2018.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/BalancedSubstring2018Test.java" />
@@ -146,9 +136,12 @@
         <option value="$PROJECT_DIR$/src/test/java/com/jza/FizzBuzzTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jza/FizzBuzz.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jza/recruitment/NokiaVol2Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2019/Yttrium2019Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jza/challenges/y2019/Yttrium2019.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jza/lessons/L5PrefixSums.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jza/challenges/y2019/Yttrium2019.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2019/Yttrium2019Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/CuttingComplexity2018Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/ZalandoCardsTest.java" />
       </list>
     </option>
   </component>
@@ -176,8 +169,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="136" />
-    <option name="y" value="-8" />
+    <option name="x" value="527" />
+    <option name="y" value="-23" />
     <option name="width" value="1449" />
     <option name="height" value="781" />
   </component>
@@ -280,7 +273,7 @@
     <property name="SearchEverywhereHistoryKey" value="public void initialExamples(){&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550951904303" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550954195704" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../innovativeproject-nokia-library" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Project" />
@@ -312,7 +305,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in CODILITIES">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -321,6 +314,15 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in CODILITIES" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CODILITIES" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -350,6 +352,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.jza in CODILITIES" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CODILITIES" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jza.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jza" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
@@ -367,8 +384,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.Yttrium2019Test" />
+      <item itemvalue="JUnit.com.jza in CODILITIES" />
+      <item itemvalue="JUnit.All in CODILITIES" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in CODILITIES" />
+        <item itemvalue="JUnit.com.jza in CODILITIES" />
         <item itemvalue="JUnit.Yttrium2019Test" />
       </list>
     </recent_temporary>
@@ -412,20 +436,11 @@
       <workItem from="1538853005048" duration="924000" />
       <workItem from="1539200739213" duration="28000" />
       <workItem from="1550238423524" duration="906000" />
-      <workItem from="1550950249154" duration="1636000" />
+      <workItem from="1550950249154" duration="3443000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BalancedSubstring2018Test_balancedSubstringTest - 2018.09.22 at 16h 43m 35s.xml">
-      <configuration name="BalancedSubstring2018Test.balancedSubstringTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BalancedSubstring2018Test_balancedSubstringTest - 2018.09.22 at 16h 43m 53s.xml">
-      <configuration name="BalancedSubstring2018Test.balancedSubstringTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FizzBuzzTest_fizzBuzzTest - 2018.10.06 at 21h 17m 15s.xml">
-      <configuration name="FizzBuzzTest.fizzBuzzTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FizzBuzzTest_fizzBuzzTest - 2018.10.06 at 21h 20m 00s.xml">
       <configuration name="FizzBuzzTest.fizzBuzzTest" configurationId="JUnit" />
     </history-entry>
@@ -447,14 +462,24 @@
     <history-entry file="Yttrium2019Test - 2019.02.23 at 20h 55m 49s.xml">
       <configuration name="Yttrium2019Test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Yttrium2019Test - 2019.02.23 at 21h 07m 57s.xml">
+      <configuration name="Yttrium2019Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Yttrium2019Test - 2019.02.23 at 21h 14m 40s.xml">
+      <configuration name="Yttrium2019Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_jza_in_CODILITIES - 2019.02.23 at 21h 30m 31s.xml">
+      <configuration name="com.jza in CODILITIES" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100115000" />
+    <option name="totallyTimeSpent" value="101922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2509992" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2509992" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -463,7 +488,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45126945" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28501227" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -485,7 +510,7 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.3297362" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.3297362" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,13 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jza/lessons/L5PrefixSums.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -644,16 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/ZalandoCardsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jza/challenges/y2018/OldKing2018.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -743,13 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/CuttingComplexity2018Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://A:/Software_programming/jdk8/src.zip!/java/util/Set.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -757,38 +758,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jza/challenges/y2019/Yttrium2019Test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jza/lessons/L5PrefixSums.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jza/challenges/y2019/Yttrium2019.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="702">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="173">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jza/challenges/y2019/Yttrium2019.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jza/challenges/y2019/Yttrium2019Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/CuttingComplexity2018Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jza/challenges/y2018/ZalandoCardsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
