@@ -8,7 +8,6 @@ public class BalancedSubstring2018 {
 	public static int balancedString(String S) {
 		Integer N = S.length(), count = 0, front = 1;
 		Integer UB = upperBound(S);
-		System.out.println("UB= " + UB);
 		for (int back = 0; back < N - 1; back++) {
 			front = back + 1;
 			while (front < N && (front + 1) - back <= UB*2) {
@@ -44,14 +43,12 @@ public class BalancedSubstring2018 {
 		HashMap<Character, Integer> map = new HashMap<>();
 		for (int i = 0; i < S.length(); i++) {
 			Character c = S.charAt(i);
-			System.out.println(c);
 			if (map.get(c) != null) {
 				map.put(c, map.get(c) + 1);
 			} else {
 				map.put(c, 1);
 			}
 		}
-		System.out.println(map.values());
 		Integer[] values = new Integer[map.size()];
 		int index = 0;
 		for (Map.Entry<Character, Integer> mapEntry : map.entrySet()) {

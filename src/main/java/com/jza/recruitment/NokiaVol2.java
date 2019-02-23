@@ -14,8 +14,6 @@ public class NokiaVol2 {
 				length++;
 			}
 		}
-		System.out.println(Arrays.toString(A));
-		System.out.println("length= " + length);
 
 		return length;
 	}
@@ -34,8 +32,6 @@ public class NokiaVol2 {
 			}
 		}
 
-		System.out.println(Arrays.toString(A));
-		System.out.println("swapped = " + swapped);
 		if (swapped > 2) {
 			return false;
 		} else return true;

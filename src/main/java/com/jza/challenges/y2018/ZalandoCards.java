@@ -22,13 +22,11 @@ public class ZalandoCards {
 			if (A[i] <= N) {
 				q.set(A[i] - 1, q.get(A[i] - 1) + 1);
 			}
-			if(B[i] <= N){
+			if (B[i] <= N) {
 				qB.set(B[i] - 1, qB.get(B[i] - 1) + 1);
 			}
 		}
-		System.out.println("quantities A: " + q.toString());
-		System.out.println("quantities B: " + qB.toString());
-		System.out.println("diffs: " + diffs.toString());
+
 
 		for (int i = 0; i < N; i++) {
 			if (q.get(i) != 0) {

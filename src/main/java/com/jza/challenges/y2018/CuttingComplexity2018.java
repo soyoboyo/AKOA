@@ -35,8 +35,6 @@ public class CuttingComplexity2018 {
 		if (M != 0) {
 			lengths.add(M);
 		}
-		System.out.println(lengths);
-		System.out.println("max: " + max);
 
 		int current;
 		int min = 0, biggestMin = Integer.MIN_VALUE, switches = 0;
@@ -64,8 +62,6 @@ public class CuttingComplexity2018 {
 			swaps = Math.min(K - max, biggestMin - (switches - 1)/2 );
 
 		}
-		System.out.println("biggestMin: " + biggestMin);
-
 
 		return swaps;
 
