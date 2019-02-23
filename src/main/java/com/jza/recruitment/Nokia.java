@@ -1,4 +1,4 @@
-package com.jza.current;
+package com.jza.recruitment;
 
 public class Nokia {
 

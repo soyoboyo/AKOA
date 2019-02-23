@@ -1,9 +1,5 @@
 package com.jza.lessons;
 
-import com.sun.javafx.scene.control.skin.VirtualFlow;
-
-import java.util.ArrayList;
-
 public class L5PrefixSums {
     public static void main(String args[]) {
 

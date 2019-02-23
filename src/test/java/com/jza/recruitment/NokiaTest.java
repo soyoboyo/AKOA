@@ -1,5 +1,6 @@
-package com.jza.current;
+package com.jza.recruitment;
 
+import com.jza.recruitment.Nokia;
 import org.junit.Assert;
 import org.junit.Test;
 

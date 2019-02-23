@@ -1,15 +1,18 @@
 package com.jza;
 
-import com.jza.current.Nokia;
+import com.jza.current.Nokia2ndTry;
 
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
 public class Main {
 
 	public static void main(String[] args) {
-		int[] t3 = {-1, 3, 4, 0, 1, 5, 6};
-		Nokia.linkedList(t3);
-
+		if ("aaa" == new String("aaa")) {
+			System.out.println("true");
+		} else {
+			System.out.println("false");
+		}
 	}
 
 	public static int binaryGap(int N) {
@@ -29,7 +32,7 @@ public class Main {
 	}
 
 	// https://codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
-	public static int strangerNumber(int []A) {
+	public static int strangerNumber(int[] A) {
 
 		Arrays.sort(A);
 
@@ -39,7 +42,7 @@ public class Main {
 
 		for (int i = 1; i < A.length; i++) {
 			if (A[i - 1] != A[i]) {
-				return A[i-1];
+				return A[i - 1];
 			} else {
 				i++;
 			}
@@ -54,7 +57,7 @@ public class Main {
 
 		for (int j = 0; j < K; j++) {
 			for (int i = last; i > 0; i--) {
-				A[i] = A[i-1];
+				A[i] = A[i - 1];
 			}
 			A[0] = tmp;
 			tmp = A[last];

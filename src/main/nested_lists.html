@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nested lists</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+<ul>
+	<li>Item:
+		<ol>
+			<li>Point:
+				<div>
+					<ul>
+						<li>elem1</li>
+					</ul>
+				</div>
+			</li>
+		</ol>
+	</li>
+	<li>elem2</li>
+</ul>
+<ul>
+	<li>simple list1</li>
+</ul>
+<ul>
+</ul>
+</body>
+<script>
+	var max = 0, lists = $('li:not(:has(ol)):not(:has(ul))');
+
+	for(list in lists) {
+		var length = $(lists[list]).parents('ul', 'ol').length;
+		if (length > max) {
+			max = length;
+		}
+	}
+	console.log('max '+  max);
+	console.log(lists);
+</script>
+</html>
