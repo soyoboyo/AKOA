@@ -2,7 +2,7 @@ package com.jza.recruitment;
 
 public class Slices {
 
-	public static int slices(int[] A) {
+	public static int solution(int[] A) {
 		int slices = 0;
 
 		for (int i = 0; i < A.length - 2; i++) {

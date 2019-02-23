@@ -1,4 +1,4 @@
-package com.jza.current;
+package com.jza.challenges.y2018;
 
 import com.jza.challenges.y2018.TrailingZeros2018;
 import org.junit.Assert;

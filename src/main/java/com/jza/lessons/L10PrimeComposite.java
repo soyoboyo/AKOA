@@ -12,22 +12,6 @@ public class L10PrimeComposite {
 		return minPerimeter;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	public static int countFactors(int N) {
 		int factors = 0;
 		int limit = (int) Math.round(Math.sqrt(N));
@@ -40,7 +24,6 @@ public class L10PrimeComposite {
 				}
 			}
 		}
-		System.out.println("countFactors: " + factors);
 		return factors;
 	}
 

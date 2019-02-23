@@ -1,8 +1,5 @@
 package com.jza;
 
-import com.jza.current.Nokia2ndTry;
-
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
 public class Main {

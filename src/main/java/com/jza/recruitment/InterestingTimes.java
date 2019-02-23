@@ -1,24 +1,12 @@
-package com.jza.current;
+package com.jza.recruitment;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashSet;
 
-public class Nokia2ndTry {
-
-	public static int removeSort(String S) {
-		int removes = 0;
-		for (int i = 0; i < S.length() - 1; i++) {
-			if (Character.compare(S.charAt(i), S.charAt(i + 1)) > 0) {
-				removes++;
-			}
-		}
-		return removes;
-	}
-
-	public static int interestingTimes(String S, String T) {
-		System.out.println(S + " " + T);
+public class InterestingTimes {
+	public static int solution(String S, String T) {
 		int points = 0;
 		try {
 			SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
@@ -61,9 +49,7 @@ public class Nokia2ndTry {
 				}
 			}
 		} catch (ParseException ex) {
-			System.out.println("error");
 		}
 		return points;
 	}
-
 }
