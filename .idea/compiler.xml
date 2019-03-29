@@ -9,8 +9,8 @@
         <module name="CODILITIES" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="CODILITIES" target="1.7" />
+    <bytecodeTargetLevel target="11">
+      <module name="CODILITIES" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

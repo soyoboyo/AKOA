@@ -59,49 +59,12 @@ public class CuttingComplexity2018 {
 					}
 				}
 			}
-			swaps = Math.min(K - max, biggestMin - (switches - 1)/2 );
+			swaps = Math.min(K - max, biggestMin - (switches - 1) / 2);
 
 		}
 
 		return swaps;
 
 	}
-//	public static int longestInterval(String S, int K) {
-//		int swaps = 0, minSwaps = Integer.MAX_VALUE;
-//		int l = 0;
-//		int longest = 0;
-//		int prevM = 0;
-//		int prevL = 0;
-//		int sumWithGap = 0;
-//		for (int i = 0; i < S.length(); i++) {
-//			if (S.charAt(i) == 'M') {
-//				l++;
-//				longest = l > longest ? l : longest;
-//				prevM = l;
-//				if (l > K) {
-//					swaps++;
-//					l = 0;
-//					i++;
-//					prevM = 0;
-//				}
-//			} else if(S.charAt(i) == 'L') {
-//				if (prevM > 0) {
-//					sumWithGap = prevL + prevM + l;
-//					if (sumWithGap == K) {
-//						minSwaps = prevL < minSwaps ? prevL : minSwaps;
-//					}
-//				} else {
-//					prevL++;
-//				}
-//				l = 0;
-//			}
-//		}
-//		if (longest < K) {
-//			swaps += K - longest;
-//		}
-//		System.out.println(minSwaps);
-//		return swaps;
-//
-//	}
 
 }
