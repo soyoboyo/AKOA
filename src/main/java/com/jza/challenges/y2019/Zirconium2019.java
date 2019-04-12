@@ -9,15 +9,17 @@ public class Zirconium2019 {
 	public class Developer implements Comparable<Developer> {
 		int fe;
 		int be;
+		int delta;
 
 		public Developer(int fe, int be) {
 			this.fe = fe;
 			this.be = be;
+			this.delta = this.fe - this.be;
 		}
 
 		@Override
 		public int compareTo(Developer o) {
-			return Integer.compare(this.fe, o.fe);
+			return Integer.compare(this.delta, o.delta);
 		}
 
 	}
@@ -30,7 +32,7 @@ public class Zirconium2019 {
 		}
 
 		Collections.sort(developers);
-		Collections.reverse(developers);
+//		Collections.reverse(developers);
 
 		int Cmax = 0,  beCount = 0;
 
@@ -43,7 +45,6 @@ public class Zirconium2019 {
 				Cmax += dev.fe;
 			}
 		}
-
 		return Cmax;
 	}
 }

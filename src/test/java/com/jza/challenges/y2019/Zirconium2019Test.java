@@ -35,4 +35,18 @@ public class Zirconium2019Test {
 		Assert.assertEquals(3, t.maxContribution(A, B, 0));
 	}
 
+	@Test
+	public void test5() {
+		int[] A = {1, 2, 3, 1};
+		int[] B = {3, 1, 9, 4};
+		Assert.assertEquals(16, t.maxContribution(A, B, 2));
+	}
+
+	@Test
+	public void test6() {
+		int[] A = {1, 1, 2, 2};
+		int[] B = {100, 101, 100, 102};
+		Assert.assertEquals(206, t.maxContribution(A, B, 2));
+	}
+
 }
