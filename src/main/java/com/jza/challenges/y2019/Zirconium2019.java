@@ -22,6 +22,14 @@ public class Zirconium2019 {
 			return Integer.compare(this.delta, o.delta);
 		}
 
+		@Override
+		public String toString() {
+			return "Developer{" +
+					"fe=" + fe +
+					", be=" + be +
+					", delta=" + delta +
+					'}';
+		}
 	}
 
 	public int maxContribution(int[] A, int[] B, int F) {
@@ -32,19 +40,29 @@ public class Zirconium2019 {
 		}
 
 		Collections.sort(developers);
-//		Collections.reverse(developers);
 
-		int Cmax = 0,  beCount = 0;
+		int Cmax = 0, beCount = 0, feCount = 0;
 
 		for (Developer dev : developers) {
-
-			if (beCount < (developers.size() - F) && dev.be >= dev.fe) {
-				Cmax += dev.be;
-				beCount++;
+			if (dev.be >= dev.fe) {
+				if (beCount < (developers.size() - F)) {
+					beCount++;
+					Cmax += dev.be;
+				} else {
+					feCount++;
+					Cmax += dev.fe;
+				}
 			} else {
-				Cmax += dev.fe;
+				if (feCount < F) {
+					feCount++;
+					Cmax += dev.fe;
+				} else {
+					beCount++;
+					Cmax += dev.be;
+				}
 			}
 		}
+
 		return Cmax;
 	}
 }
