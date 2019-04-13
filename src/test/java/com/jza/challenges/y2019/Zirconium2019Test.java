@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class Zirconium2019Test {
 
-	Zirconium2019 t = new Zirconium2019();
+	Zirconium2019v2 t = new Zirconium2019v2();
 
 	@Test
 	public void test1() {
