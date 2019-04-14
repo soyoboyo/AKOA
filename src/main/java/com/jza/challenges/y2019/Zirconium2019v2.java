@@ -5,7 +5,33 @@ import java.util.LinkedList;
 import java.util.TreeSet;
 
 public class Zirconium2019v2 {
-	public static int maxContribution(int[] A, int[] B, int F) {
+
+	public class Developer {
+		int fe;
+		int be;
+		int difference;
+
+		public Developer(int fe, int be) {
+			this.fe = fe;
+			this.be = be;
+			difference = this.be - this.fe;
+		}
+	}
+
+	class QueueComparator implements Comparator<Developer> {
+		@Override
+		public int compare(Developer o1, Developer o2) {
+			int mod = Math.abs(o1.difference) - Math.abs(o2.difference);
+			if (mod > 0) {
+				return -1;
+			} else if (mod == 0 && (o1.fe > o2.be && o1.fe > o2.fe)) {
+				return -1;
+			}
+			return 1;
+		}
+	}
+
+	public int maxContribution(int[] A, int[] B, int F) {
 		int size = B.length;
 		int feCount = 0, feMax = F;
 		int beCount = 0, beMax = size - F;
@@ -19,7 +45,7 @@ public class Zirconium2019v2 {
 		LinkedList<Developer> myList = new LinkedList<>();
 		for (int i = 0; i < size; i++) {
 			Developer developer = sortedContribution.pollFirst();
-			if (developer.difference < 0 && feCount < F) {
+			if (developer.difference < 0 && feCount < feMax) {
 				feCount++;
 				Cmax += developer.fe;
 			} else if (developer.difference > 0 && beCount < beMax) {
@@ -34,36 +60,11 @@ public class Zirconium2019v2 {
 				Cmax += myList.pollFirst().be;
 			}
 		}
-		if (feCount != F) {
-			for (int i = 0; i < F - feCount; i++) {
+		if (feCount != feMax) {
+			for (int i = 0; i < feMax - feCount; i++) {
 				Cmax += myList.pollFirst().fe;
 			}
 		}
 		return Cmax;
-	}
-}
-
-class Developer {
-	int fe;
-	int be;
-	int difference;
-
-	public Developer(int fe, int be) {
-		this.fe = fe;
-		this.be = be;
-		difference = this.be - this.fe;
-	}
-}
-
-class QueueComparator implements Comparator<Developer> {
-	@Override
-	public int compare(Developer o1, Developer o2) {
-		int mod = Math.abs(o1.difference) - Math.abs(o2.difference);
-		if (mod > 0) {
-			return -1;
-		} else if (mod == 0 && (o1.fe > o2.be && o1.fe > o2.fe)) {
-			return -1;
-		}
-		return 1;
 	}
 }
