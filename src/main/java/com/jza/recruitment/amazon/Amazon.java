@@ -1,4 +1,4 @@
-package com.jza.recruitment;
+package com.jza.recruitment.amazon;
 
 public class Amazon {
 
@@ -13,7 +13,7 @@ public class Amazon {
 		}
 		return arr;
 	}
-	
+
 	public static int[] sortArray(int arr[]){
 		int i, max, location, j, temp, len = arr.length;
 		for(i = 0; i < len; i++){
@@ -44,7 +44,7 @@ public class Amazon {
 		return arr;
 	}
 
-	public static int countOccurance(int arr[], int value){
+	public static int countOccurrence(int arr[], int value){
 		int i = 0, count = 0, len = arr.length;
 		while (i < len){
 			if(arr[i] == value){
@@ -77,12 +77,15 @@ public class Amazon {
 
 	}
 
-	public static void pritnPattern(int n){
+	public static String printPattern(int n){
 		int i, j, print = 1;
 		for(i = 1; i <= n; i++)
 			for(j=1;j<=2*i;j++)
 				System.out.print((print));
 			System.out.println();
+
+
+		return " ";
 	}
 
 }
