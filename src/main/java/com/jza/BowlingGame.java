@@ -41,6 +41,7 @@ public class BowlingGame {
 					}
 				}
 			}
+			System.out.println(result);
 		}
 		return result;
 	}
