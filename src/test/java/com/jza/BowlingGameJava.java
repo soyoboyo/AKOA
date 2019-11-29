@@ -38,8 +38,19 @@ class BowlingGameTest {
 
 	@Test
 	public void shouldReturn276() {
-		assertEquals(276, theGame.getScore(Arrays.asList("X", "X", "X", "X", "X", "X", "X", "X", "8/", "XXX")));
+		assertEquals(276, theGame.getScore(Arrays.asList("X", "X", "X", "X", "X", "X", "X", "X", "6/", "XXX")));
 	}
+
+	@Test
+	public void shouldReturn101a() {
+		assertEquals(101, theGame.getScore(Arrays.asList("7/", "-7", "7-", "-X", "81", "16", "-8", "7-", "7-", "X8/")));
+	}
+
+	@Test
+	public void shouldReturn101c() {
+		assertEquals(101, theGame.getScore(Arrays.asList("72", "71", "8/", "71", "18", "53", "34", "35", "8/", "81")));
+	}
+
 }
 
 
