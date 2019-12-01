@@ -18,10 +18,10 @@ public class ProtectTrees {
 		return convertAnswerFormat(squares);
 	}
 
-	private String convertAnswerFormat(Stack<Long> values) {
+	private String convertAnswerFormat(Stack<Long> solution) {
 		StringBuilder sb = new StringBuilder();
-		while (!values.isEmpty()) {
-			sb.append(values.pop());
+		while (!solution.isEmpty()) {
+			sb.append(solution.pop());
 			sb.append(" ");
 		}
 		return sb.toString().trim();
