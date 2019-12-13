@@ -12,7 +12,7 @@ public class CheatingFriend {
 		long a = n / 2 - 1, b = n / 2;
 		for (long i = n / 2 - 1; i <= n; i++) {
 			a = i;
-			for (long j = n / 2; j <= n; j++) {
+			for (long j = a; j <= n; j++) {
 				b = j;
 				long sumWithout = sum - a - b;
 				long product = a * b;
@@ -20,12 +20,13 @@ public class CheatingFriend {
 					break;
 				}
 				System.out.println("a = " + a + ", b = " + b);
-				System.out.println("sum = " + sumWithout + ", product = " + product);
+				System.out.println("product = " + product + ", sum = " + sumWithout);
 				if (a != b && sumWithout == product) {
 					res.add(new long[]{a, b});
 					res.add(new long[]{b, a});
 				}
 			}
+			System.out.println("======================================================");
 		}
 		System.out.println("res size = " + res.size());
 		return res;

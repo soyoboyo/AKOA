@@ -10,6 +10,16 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class CheatingFriendTest {
 	@Test
+	public void test1() {
+		List<long[]> res = new ArrayList<long[]>();
+		res.add(new long[]{6, 7});
+		res.add(new long[]{7, 6});
+		List<long[]> a = CheatingFriend.isHeCheating(1000003);
+		assertArrayEquals(res.get(0), a.get(0));
+		assertArrayEquals(res.get(1), a.get(1));
+	}
+
+	@Test
 	public void test12() {
 		List<long[]> res = new ArrayList<long[]>();
 		res.add(new long[]{15, 21});
@@ -26,13 +36,5 @@ class CheatingFriendTest {
 		assertTrue(res.size() == a.size());
 	}
 
-	@Test
-	public void test1() {
-		List<long[]> res = new ArrayList<long[]>();
-		res.add(new long[]{6, 7});
-		res.add(new long[]{7, 6});
-		List<long[]> a = CheatingFriend.isHeCheating(10);
-		assertArrayEquals(res.get(0), a.get(0));
-		assertArrayEquals(res.get(1), a.get(1));
-	}
+
 }
