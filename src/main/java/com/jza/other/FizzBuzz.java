@@ -1,4 +1,4 @@
-package com.jza;
+package com.jza.other;
 
 public class FizzBuzz {
 

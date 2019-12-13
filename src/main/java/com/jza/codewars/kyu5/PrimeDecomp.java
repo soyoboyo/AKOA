@@ -1,4 +1,4 @@
-package com.jza.codewars;
+package com.jza.codewars.kyu5;
 
 
 public class PrimeDecomp {

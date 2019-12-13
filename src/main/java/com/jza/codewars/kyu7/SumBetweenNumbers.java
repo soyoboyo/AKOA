@@ -1,4 +1,4 @@
-package com.jza.codewars;
+package com.jza.codewars.kyu7;
 
 public class SumBetweenNumbers {
 	public int GetSum(int a, int b) {

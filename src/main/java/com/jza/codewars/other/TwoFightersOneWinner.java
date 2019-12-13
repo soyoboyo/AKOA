@@ -1,4 +1,4 @@
-package com.jza.codewars;
+package com.jza.codewars.other;
 
 public class TwoFightersOneWinner {
 	public class Fighter {

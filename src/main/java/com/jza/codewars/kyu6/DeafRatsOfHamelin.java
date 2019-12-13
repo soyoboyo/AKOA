@@ -1,4 +1,4 @@
-package com.jza.codewars;
+package com.jza.codewars.kyu6;
 
 public class DeafRatsOfHamelin {
 
