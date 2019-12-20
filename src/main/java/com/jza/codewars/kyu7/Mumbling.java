@@ -1,4 +1,4 @@
-package com.jza.codewars;
+package com.jza.codewars.kyu7;
 
 public class Mumbling {
 	public static String accum(String s) {

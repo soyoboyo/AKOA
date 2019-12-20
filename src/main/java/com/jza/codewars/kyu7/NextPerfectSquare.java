@@ -1,4 +1,4 @@
-package com.jza.codewars;
+package com.jza.codewars.kyu7;
 
 public class NextPerfectSquare {
 	public static long findNextSquare(long sq) {

@@ -1,4 +1,4 @@
-package com.jza.codewars;
+package com.jza.codewars.kyu6;
 
 import java.util.ArrayList;
 import java.util.List;
