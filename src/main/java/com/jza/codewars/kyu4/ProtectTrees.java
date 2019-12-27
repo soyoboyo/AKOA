@@ -16,25 +16,25 @@ public class ProtectTrees {
 		Long number = n - 1;
 		long leftOver = n * n;
 		long previousN = number;
-		do {
+		while (leftOver > 0) {
 			long square = number * number;
 			leftOver -= square;
-
 			solution.add(number);
 			number = (long) Math.sqrt(leftOver);
-
-		} while (leftOver > 0);
+			if (number == previousN) {
+				System.out.println("true");
+			} else {
+				System.out.println("false");
+			}
+		}
 		return solution;
 	}
 
 	private static boolean verifySolution(List<Long> solution) {
-		long previousNumber = solution.get(0);
-		for (int i = 1; i < solution.size(); i++) {
-			long currentNumber = solution.get(i);
-			if (currentNumber == previousNumber) {
+		for (int i = 0; i < solution.size() - 1; i++) {
+			if (solution.get(i).equals(solution.get(i + 1))) {
 				return false;
 			}
-			previousNumber = currentNumber;
 		}
 		return true;
 	}
