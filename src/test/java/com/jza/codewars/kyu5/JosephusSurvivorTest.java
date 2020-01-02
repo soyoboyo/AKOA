@@ -33,6 +33,6 @@ class JosephusSurvivorTest {
 
 	private void josephusTest(final int people, final int k, final int result) {
 		String testDescription = String.format("Testing where n = %d and k = %d", people, k);
-		assertEquals(testDescription, result, JosephusSurvivor.josephusSurvivor(people, k));
+		assertEquals(testDescription, result, JosephusSurvivor.josephusSurvivorBruteforce(people, k));
 	}
 }
