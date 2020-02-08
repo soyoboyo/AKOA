@@ -8,10 +8,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class CourseSchedule {
 
 	public static List<String> getCoursesOrder(Map<String, List<String>> courses) {
-
 		List<String> order = new ArrayList<>();
 		List<String> toRemove = new ArrayList<>();
-
 		while (!courses.isEmpty()) {
 			AtomicBoolean isLooped = new AtomicBoolean(true);
 			courses.forEach((k, v) -> {
