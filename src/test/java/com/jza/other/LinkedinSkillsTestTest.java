@@ -25,6 +25,11 @@ class LinkedinSkillsTestTest {
 	}
 
 	@Test
+	void q7() {
+		LinkedinSkillsTest.q7();
+	}
+
+	@Test
 	void q9() {
 		LinkedinSkillsTest.q9();
 	}

@@ -50,6 +50,14 @@ public class LinkedinSkillsTest {
 //		System.out.println(names.toString());
 	}
 
+	public static void q7() {
+		String s = "schwifty";
+		System.out.println(s.getClass().getSimpleName() == "String");
+//		System.out.println(s.getType() == String);
+		System.out.println(s instanceof String);
+//		System.out.println(s.getType().equals("String"));
+	}
+
 	public static void q9() {
 		// A and D
 		try {
