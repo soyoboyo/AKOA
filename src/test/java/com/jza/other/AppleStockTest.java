@@ -24,4 +24,10 @@ class AppleStockTest {
 		assertEquals(1, AppleStock.maxProfit(prices));
 	}
 
+	@Test
+	public void test4() {
+		int[] prices = {11, 10, 9, 8, 7, 6};
+		assertEquals(-1, AppleStock.maxProfit(prices));
+	}
+
 }

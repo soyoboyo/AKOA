@@ -7,16 +7,14 @@ class AppleStock {
 //# Returns 6 (buying for $5 and selling for $11)
 
 	public static int maxProfit(int[] prices) {
-		int max = 0;
-		for (int i = 0; i < prices.length; i++) {
-			int buy = prices[i];
-			for (int j = i; j < prices.length; j++) {
-				int sell = prices[j];
-				if (sell - buy > max) {
-					max = sell - buy;
-				}
-			}
+		int minPrice = prices[0];
+		int maxProfit = prices[1] - prices[0];
+		for (int i = 1; i < prices.length; i++) {
+			int currentPrice = prices[i];
+			int potentialProfit = currentPrice - minPrice;
+			minPrice = Math.min(currentPrice, minPrice);
+			maxProfit = Math.max(maxProfit, potentialProfit);
 		}
-		return max;
+		return maxProfit;
 	}
 }
