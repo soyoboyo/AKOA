@@ -7,53 +7,58 @@ class CapacityForRain {
 		}
 		int capacity = 0;
 		int potentialCapacity = 0;
-		boolean isInGap = landscape[1] < landscape[0];
-		int leftEdge = isInGap ? landscape[0] : landscape[1];
+		boolean isInGap = false;
+		int leftEdge = landscape[0];
+		int rightEdgeIndex = 0;
 		int gapSize = 0;
-		for (int i = 1; i < landscape.length; i++) {
+		for (int i = 0; i < landscape.length; i++) {
 			int current = landscape[i];
-			if (isInGap) {
-				if (current >= leftEdge) {
-					leftEdge = current;
-					isInGap = false;
-				} else {
-					potentialCapacity += leftEdge - current;
-					gapSize++;
-				}
-			} else {
-				if (current >= leftEdge) {
-					capacity += (potentialCapacity - (Math.min(current, leftEdge) * gapSize));
+			if (current < leftEdge) {
+				isInGap = true;
+			}
+			if (current >= leftEdge) {
+				if (isInGap) {
+					if (leftEdge > current) {
+						capacity += (potentialCapacity - ((leftEdge - current) * gapSize));
+					} else {
+						capacity += potentialCapacity;
+					}
 					gapSize = 0;
 					potentialCapacity = 0;
 				} else {
-					isInGap = true;
+					leftEdge = current;
 				}
-				leftEdge = current;
+				isInGap = false;
+			} else {
+				if (isInGap) {
+					rightEdgeIndex = current > landscape[rightEdgeIndex] && leftEdge > current ? i : rightEdgeIndex;
+					potentialCapacity += leftEdge - current;
+					gapSize++;
+				} else {
+					rightEdgeIndex = i;
+					isInGap = true;
+					leftEdge = current;
+				}
+
+				if (i == landscape.length - 1 && potentialCapacity > 0) {
+					capacity += potentialCapacity - (leftEdge - landscape[rightEdgeIndex]) * gapSize;
+					capacity -= removeExcess(rightEdgeIndex, leftEdge, landscape);
+				}
 			}
 
 
-//			if (current >= leftEdge && !isInGap) {
-//				leftEdge = current;
-//				gapCount = 0;
-//			} else if (current < leftEdge && i != landscape.length - 1) {
-//				isInGap = true;
-//				potentialCapacity += leftEdge - current;
-//				gapCount++;
-//				System.out.println(gapCount);
-//			} else if (isInGap) {
-//				System.out.println(current + "  " + leftEdge);
-//				if (current < leftEdge) {
-//					capacity += (potentialCapacity - Math.min(current, leftEdge) * gapCount);
-//				} else if (current > leftEdge) {
-//					capacity += (potentialCapacity - Math.min(current, leftEdge) * (gapCount-1));
-//				} else {
-//					capacity += potentialCapacity;
-//				}
-//				gapCount = 0;
-//				leftEdge = current;
-//				isInGap = false;
-//			}
 		}
 		return capacity;
+	}
+
+	private static int removeExcess(int lastIndex, int leftEdge, int[] landscape) {
+		int excess = 0;
+		System.out.println("lastIndex = " + lastIndex);
+		for (int i = lastIndex; i < landscape.length; i++) {
+			excess += leftEdge - landscape[i];
+			excess -= leftEdge - landscape[lastIndex];
+		}
+		System.out.println("excess = " + excess);
+		return excess;
 	}
 }

@@ -1,4 +1,4 @@
-package com.jza.other;
+package com.jza.dip.apple;
 
 class AppleStock {
 

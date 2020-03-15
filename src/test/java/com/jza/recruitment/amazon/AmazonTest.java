@@ -1,6 +1,5 @@
-package com.jza.recruitment;
+package com.jza.recruitment.amazon;
 
-import com.jza.recruitment.amazon.Amazon;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
