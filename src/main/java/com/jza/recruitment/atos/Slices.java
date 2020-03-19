@@ -1,4 +1,4 @@
-package com.jza.recruitment;
+package com.jza.recruitment.atos;
 
 public class Slices {
 

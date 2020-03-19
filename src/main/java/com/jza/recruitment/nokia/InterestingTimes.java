@@ -1,4 +1,4 @@
-package com.jza.recruitment;
+package com.jza.recruitment.nokia;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

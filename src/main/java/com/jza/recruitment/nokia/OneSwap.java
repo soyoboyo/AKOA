@@ -1,4 +1,4 @@
-package com.jza.recruitment;
+package com.jza.recruitment.nokia;
 
 import java.util.Arrays;
 
