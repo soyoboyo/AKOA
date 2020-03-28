@@ -7,19 +7,25 @@ class WithoutString {
 		String remove = toRemove.toLowerCase();
 		for (int i = 0; i < base.length(); i++) {
 			int j = 0;
-//			base.length() - i - remove.length() >= 0
-			while (j < remove.length()) {
-				if (base.charAt(i) != remove.charAt(j)) {
+
+			String temp = "";
+			while (j < remove.length() && i < base.length()) {
+				if (base.charAt(i) != remove.charAt(j) && temp.length() == 0) {
 					sb.append(original.charAt(i));
 					break;
-				} else if (j != remove.length() - 1) {
+				} else {
+					temp += original.charAt(i);
+					j++;
 					i++;
 				}
-				j++;
 			}
-
+			if (!temp.toLowerCase().equals(remove)) {
+				sb.append(temp);
+			}
+			if (temp.length() > 0) {
+				i--;
+			}
 		}
-
 		return sb.toString();
 	}
 }

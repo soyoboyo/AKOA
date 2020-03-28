@@ -23,7 +23,7 @@ public class HIndex {
 	public static int getHIndex(int[] citations) {
 		int result = 0;
 		Map<Integer, Integer> indexesCount = new HashMap<>();
-
+//		indexesCount.putIfAbsent();
 		for (int i = 0; i < citations.length; i++) {
 			int value = citations[i];
 			Integer count = indexesCount.get(value);
@@ -38,6 +38,16 @@ public class HIndex {
 		}
 
 		return result;
+	}
+
+	public Map<String, Integer> wordLen(String[] strings) {
+		Map<String, Integer> map = new HashMap<>();
+		for (int i = 0; i < strings.length; i++) {
+			String s = strings[i];
+			map.put(s, s.length());
+		}
+
+		return map;
 	}
 
 }
