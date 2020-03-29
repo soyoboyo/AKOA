@@ -1,8 +1,5 @@
 package com.jza.dip.amazon;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class HIndex {
 
 	/*
@@ -18,36 +15,62 @@ public class HIndex {
 		Explanation:
 		There are 3 publications with 3 or more citations, hence the h-index is 3.
 
+	----------------------------------
+	An approach to this problem is to sort the publications by number of citations, and the first index such that publications[i] < i would be the h-index.
+
+	Example:
+	[5, 3, 3, 1, 0]
+
+	With the publications sorted, the expression holds true until i = 3, and thus the h-index is 3.
+
+	This would give us a O(n log n) time complexity, however we can do better by being smarter with the sorting.
+
+	Note that the upper bound of the h-index of a scholar is the number of publications they've done. Thus citations greater than n are guaranteed to be considered in the h-index. Therefore for all items greater than n can be in the same 'bucket'. The other buckets would be the numbers from 0 to n.
+
+	After sorting, we use the same logic as above to find the h-index.
+
+
+	The time complexity of this solution is O(n), as there is at most n elements in citations.
+
+	The space complexity is O(n) to do bucket sort.
 	 */
 
-	public static int getHIndex(int[] citations) {
-		int result = 0;
-		Map<Integer, Integer> indexesCount = new HashMap<>();
-//		indexesCount.putIfAbsent();
-		for (int i = 0; i < citations.length; i++) {
-			int value = citations[i];
-			Integer count = indexesCount.get(value);
-			if (count == null) {
-				indexesCount.put(value, 1);
+	public static int getHIndex(int[] publications) {
+		int len = publications.length;
+		int[] citations = new int[len + 1];
+
+		for (int i = 0; i < publications.length; i++) {
+			int pub = publications[i];
+			if (pub < len) {
+				citations[pub]++;
 			} else {
-				indexesCount.put(value, count++);
-				if (count >= value) {
-					result = Math.max(result, indexesCount.get(value));
-				}
+				citations[len]++;
 			}
 		}
 
-		return result;
-	}
-
-	public Map<String, Integer> wordLen(String[] strings) {
-		Map<String, Integer> map = new HashMap<>();
-		for (int i = 0; i < strings.length; i++) {
-			String s = strings[i];
-			map.put(s, s.length());
+		int total = 0;
+		int i = len;
+		while (i >= 0) {
+			total += citations[i];
+			if (total >= i) {
+				return i;
+			}
+			i--;
 		}
 
-		return map;
+		return i;
 	}
 
+	/* n logn solution
+
+	Arrays.sort(publications);
+	int count = 0;
+	for (int i = publications.length - 1; i >= 0; i--) {
+		count++;
+		if(count >= publications[i]){
+			return publications[i];
+		}
+	}
+
+	 */
 }
