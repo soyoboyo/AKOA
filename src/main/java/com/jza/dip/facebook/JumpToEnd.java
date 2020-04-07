@@ -27,9 +27,11 @@ class JumpToEnd {
 		Arrays.fill(jumps, Integer.MAX_VALUE);
 		jumps[0] = 0;
 
+		int iter = 0;
 		for (int i = 0; i < len; i++) {
 			int n = nums[i];
 			for (int j = 1; j < n + 1; j++) {
+				iter++;
 				if ((i + j) < len) {
 					jumps[i + j] = Math.min(jumps[i + j], jumps[i] + 1);
 				} else {
@@ -38,7 +40,7 @@ class JumpToEnd {
 			}
 
 		}
-
+		System.out.println(iter);
 		return jumps[len - 1];
 	}
 
