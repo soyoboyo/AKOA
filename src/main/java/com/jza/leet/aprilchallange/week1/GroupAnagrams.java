@@ -1,4 +1,4 @@
-package com.jza.leet.aprilchallange;
+package com.jza.leet.aprilchallange.week1;
 
 import java.util.*;
 

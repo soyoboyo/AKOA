@@ -1,4 +1,4 @@
-package com.jza.leet.aprilchallange;
+package com.jza.leet.aprilchallange.week1;
 
 public class BuySellStock2 {
 	public static int maxProfit(int[] prices) {
