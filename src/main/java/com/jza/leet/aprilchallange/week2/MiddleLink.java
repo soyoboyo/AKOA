@@ -1,11 +1,11 @@
-package com.jza.leet.aprilchallange;
+package com.jza.leet.aprilchallange.week2;
 
 import com.jza.utils.ListNode;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MiddleLink {
+class MiddleLink {
 
 	public static ListNode middleNode(ListNode head) {
 		List<ListNode> list = new ArrayList<>();

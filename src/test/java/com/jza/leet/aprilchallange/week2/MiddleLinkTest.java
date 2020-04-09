@@ -1,4 +1,4 @@
-package com.jza.leet.aprilchallange;
+package com.jza.leet.aprilchallange.week2;
 
 import com.jza.utils.ListNode;
 import org.junit.jupiter.api.Test;
