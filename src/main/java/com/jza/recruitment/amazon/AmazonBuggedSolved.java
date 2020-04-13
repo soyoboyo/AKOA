@@ -1,7 +1,7 @@
 package com.jza.recruitment.amazon;
 
 
-public class Amazon {
+public class AmazonBuggedSolved {
 
 	public static int[] reverseArray(int[] arr) {
 		int i, temp, len = arr.length;

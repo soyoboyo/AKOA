@@ -1,4 +1,4 @@
-package com.jza.interviewcake;
+package com.jza.interviewcake.greedy;
 
 class ProductOf3 {
 	public static int getHighestProduct(int[] nums) {

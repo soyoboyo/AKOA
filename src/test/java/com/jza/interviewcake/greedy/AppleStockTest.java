@@ -1,4 +1,4 @@
-package com.jza.interviewcake;
+package com.jza.interviewcake.greedy;
 
 import org.junit.jupiter.api.Test;
 
