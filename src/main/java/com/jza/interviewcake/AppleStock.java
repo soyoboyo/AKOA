@@ -1,4 +1,4 @@
-package com.jza.dip.apple;
+package com.jza.interviewcake;
 
 class AppleStock {
 

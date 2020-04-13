@@ -1,4 +1,4 @@
-package com.jza.dip.apple;
+package com.jza.interviewcake;
 
 import org.junit.jupiter.api.Test;
 
