@@ -1,4 +1,4 @@
-package com.jza.algo;
+package com.jza.coderpro;
 
 import java.util.List;
 

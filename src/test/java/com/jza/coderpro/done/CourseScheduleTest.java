@@ -1,4 +1,4 @@
-package com.jza.algo.done;
+package com.jza.coderpro.done;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

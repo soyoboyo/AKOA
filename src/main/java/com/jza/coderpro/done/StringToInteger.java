@@ -1,4 +1,4 @@
-package com.jza.algo.done;
+package com.jza.coderpro.done;
 
 public class StringToInteger {
 
