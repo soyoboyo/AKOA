@@ -41,6 +41,7 @@ class JumpToEnd {
 
 		}
 		System.out.println(iter);
+		System.out.println(Arrays.toString(jumps));
 		return jumps[len - 1];
 	}
 

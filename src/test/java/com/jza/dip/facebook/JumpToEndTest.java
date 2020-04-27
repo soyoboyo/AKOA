@@ -18,4 +18,28 @@ class JumpToEndTest {
 		assertEquals(4, JumpToEnd.getJumps(input));
 	}
 
+	@Test
+	public void test3() {
+		int[] input = {3, 2, 1, 0, 4};
+		assertEquals(4, JumpToEnd.getJumps(input));
+	}
+
+	@Test
+	public void test4() {
+		int[] input = {0, 2, 3};
+		assertEquals(4, JumpToEnd.getJumps(input));
+	}
+
+	@Test
+	public void test5() {
+		int[] input = {0, 1, 1, 1};
+		assertEquals(4, JumpToEnd.getJumps(input));
+	}
+
+	@Test
+	public void test6() {
+		int[] input = {0};
+		assertEquals(4, JumpToEnd.getJumps(input));
+	}
+
 }
