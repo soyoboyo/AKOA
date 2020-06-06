@@ -15,4 +15,9 @@ class TwoSumTest {
 	public void test2() {
 		assertArrayEquals(new int[]{2, 3}, TwoSum.twoSumOfficialAnswer(new int[]{2, 7, 11, 15}, 26));
 	}
+
+	@Test
+	public void test3() {
+		assertArrayEquals(new int[]{1, 2}, TwoSum.twoSumOfficialAnswer(new int[]{3, 2, 4}, 6));
+	}
 }

@@ -2,7 +2,50 @@ package com.jza.other;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 class LinkedinSkillsTestTest {
+
+
+	class MovingAverage {
+
+		int windowSize;
+		Queue<Integer> numbers = new LinkedList<>();
+
+		/**
+		 * Initialize your data structure here.
+		 */
+		public MovingAverage(int size) {
+			this.windowSize = size;
+		}
+
+		public double next(int val) {
+			if (numbers.size() + 1 > this.windowSize) {
+				numbers.remove();
+			}
+			numbers.add(val);
+
+			double sum = 0;
+			for (Integer n : numbers) {
+				sum += n;
+			}
+			System.out.println(numbers + " " + sum + " " + numbers.size());
+			return (double) (sum / numbers.size());
+
+		}
+	}
+
+	@Test
+	void test() {
+
+
+	}
+
+
+	void method(String e, boolean i, Integer... number) {
+
+	}
 
 	@Test
 	void q1() {
