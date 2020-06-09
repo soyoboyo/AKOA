@@ -3,6 +3,7 @@ package com.jza.recruitment.amazon;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+
 class EightCellsLifeTest {
 
 
