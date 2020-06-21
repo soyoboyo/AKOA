@@ -1,5 +1,6 @@
 package com.jza;
 
+import com.jza.foobar.GoogleFoobar;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;

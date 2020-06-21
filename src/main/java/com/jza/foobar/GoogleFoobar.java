@@ -1,4 +1,4 @@
-package com.jza;
+package com.jza.foobar;
 
 public class GoogleFoobar {
 	public static String level1(int i) {
