@@ -16,18 +16,21 @@ public class SalesPath {
 
 
 	public static int getCheapestCost(Node rootNode) {
-		System.out.println("cost = " + rootNode.cost);
+
 
 		if (rootNode.children == null || rootNode.children.length == 0) {
-			System.out.println("children = 0 -> return");
+			System.out.println("cost = " + rootNode.cost + ", children = 0 -> return");
 			return rootNode.cost;
 		}
-		System.out.println("children = " + rootNode.children.length);
+		System.out.println("cost = " + rootNode.cost + ", children = " + rootNode.children.length);
 		int min = Integer.MAX_VALUE;
 		for (int i = 0; i < rootNode.children.length; i++) {
 			int tmpCost = getCheapestCost(rootNode.children[i]);
+
 			if (tmpCost < min) {
 				min = tmpCost;
+			} else {
+				return min + rootNode.cost;
 			}
 		}
 
@@ -56,7 +59,7 @@ public class SalesPath {
 		n9.children = new Node[]{n11};
 		root.children = new Node[]{n1, n2, n3};
 		int min = SalesPath.getCheapestCost(root);
-		System.out.println(min);
+
 		return min;
 	}
 }

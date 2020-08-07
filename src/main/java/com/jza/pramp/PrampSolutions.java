@@ -179,4 +179,66 @@ public class PrampSolutions {
 		return -1;
 	}
 
+	static int findBusiestPeriod(int[][] data) {
+//		int[][] input = new int[][]{
+//			{1487799425, 14, 1},
+//			{1487799425, 4,  0},
+//			{1487799425, 2,  0},
+//			{1487800378, 10, 1},
+//			{1487801478, 18, 0},
+//			{1487801478, 18, 1},
+//			{1487901013, 1,  0},
+//			{1487901211, 7,  1},
+//			{1487901211, 7,  0} };
+		int count = 0;
+		int maxCount = Integer.MIN_VALUE;
+		int maxTime = 0;
+
+		for (int i = 0; i < data.length; i++) {
+			int time = data[i][0];
+			int people = data[i][1];
+
+			if (data[i][2] == 1) {
+				count += people;
+			} else {
+				count -= people;
+			}
+
+			if (i < data.length - 1 && time == data[i + 1][0])
+				continue;
+
+			if (count > maxCount) {
+				maxCount = count;
+				maxTime = time;
+			}
+		}
+		return maxTime;
+	}
+
+	static HashMap<String, String> flattenDictionary(HashMap<String, Object> dict) {
+		HashMap<String, String> resultDict = new HashMap<>();
+		helper("", dict, resultDict);
+		return resultDict;
+	}
+
+	static void helper(String initialKey, Object dict, HashMap<String, String> resultDict) {
+		for (Map.Entry<String, Object> entry : ((HashMap<String, Object>) dict).entrySet()) {
+			String key = entry.getKey();
+			Object val = entry.getValue();
+			if (val instanceof String) {
+				if (initialKey == null || initialKey.equals("")) {
+					resultDict.put(key, val.toString());
+				} else {
+					resultDict.put(initialKey + "." + key, val.toString());
+				}
+			} else {
+				if (initialKey == null || initialKey.equals("")) {
+					helper(key, val, resultDict);
+				} else {
+					helper(initialKey + "." + key, val, resultDict);
+				}
+			}
+		}
+	}
+
 }
