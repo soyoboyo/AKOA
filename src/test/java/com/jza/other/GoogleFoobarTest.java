@@ -1,4 +1,4 @@
-package com.jza;
+package com.jza.other;
 
 import com.jza.foobar.GoogleFoobar;
 import org.junit.jupiter.api.Test;

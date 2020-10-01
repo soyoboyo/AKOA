@@ -13,10 +13,12 @@ public class LinkedinSkillsTest {
 	public static void main(String args[]) {
 
 //		float b = 3.14;
-
+		System.out.println("strawberries".substring(2, 5));
 
 //		char sm = 'x';
-//		System.out.println((int) sm);
+////		int iii = 123121233123123;
+//		long lll = 123121233123123L;
+//		System.out.println((int) lll);
 //		for(int x = 1; x <-10; x--){}
 //		for(i = 3; i <= 3; i++){}
 //		for(;;){}
@@ -284,24 +286,61 @@ public class LinkedinSkillsTest {
 		message += " ";
 	}
 
+	public static void m18() {
+		// a runtime exception is thrown
+		String message = "Hello world!";
+		String newMessage = message.substring(6, 12) + message.substring(12, 6);
+		System.out.println(newMessage);
+
+		// "world!world!"
+		// "world!!world!"
+		// The code does not compile
+		// A runtime exception is thrown
+	}
+
+	public static void m19() {
+		// which letters will print when this code is run?
+		// A and D
+		try {
+			System.out.println("A");
+			badMethod();
+			System.out.println("B");
+		} catch (Exception ex) {
+			System.out.println("C");
+		} finally {
+			System.out.println("D");
+		}
+		// A and D
+		// C and D
+		// A, C and D
+		// A, B and D
+	}
+
+	private static void badMethod() {
+		throw new Error();
+	}
+
+	public static void m20() {
+		// different loop iteration
+		for (int i = 0; i < 10; i = i++) {
+			i += 1;
+			System.out.println("Hello World!");
+		}
+		// How many times will this code print "Hello World"?
+		// infinite number of times
+		// 10 times <-
+		// 5 times
+		// 9 times
+	}
+
+
+	///////////////////////////////////////////////////////////////////////
 
 	public static void q3() {
 		// a negative number
 		System.out.println("apple".compareTo("banana"));
 	}
 
-	public static void q5() {
-		// a runtime exception is thrown
-		String message = "Hello world!";
-		String newMessage = message.substring(6, 12) + message.substring(12, 6);
-		System.out.println(newMessage);
-		/*
-		"world!world!"
-		"world!!world!"
-		The code does not compile
-		A runtime exception is thrown
-		 */
-	}
 
 	public static void q6() {
 		List<String> list = Arrays.asList("Zed", "Ned", "Ded", "Ped");
@@ -323,33 +362,16 @@ public class LinkedinSkillsTest {
 	}
 
 	public static void q7() {
+		// What statement returns true if "schwifty" is of type String?
 		String s = "schwifty";
+		// A
 		System.out.println(s.getClass().getSimpleName() == "String");
+//		B
 //		System.out.println(s.getType() == String);
+		// C
 		System.out.println(s instanceof String);
+		// D
 //		System.out.println(s.getType().equals("String"));
-	}
-
-	public static void q9() {
-		// which letters will print when this code is run?
-		// A and D
-		try {
-			System.out.println("A");
-			badMethod();
-			System.out.println("B");
-		} catch (Exception ex) {
-			System.out.println("C");
-		} finally {
-			System.out.println("D");
-		}
-		// A and D
-		// C and D
-		// A, C and D
-		// A, B and D
-	}
-
-	private static void badMethod() {
-		throw new Error();
 	}
 
 	public static void q13() {
