@@ -15,14 +15,14 @@ class DevSkillerTest {
 
 	@Test
 	public void shouldReturnListWithRepeatedValues() {
-//		// given
+		// given
 		DevSkiller exercise = new DevSkiller();
 
-//		// when
+		// when
 		List<Integer> result = exercise.findDuplicates(asList(-1, 1, 3, 2, 5, 6, -1, 3, 6), 2);
 		System.out.println(result);
-//
-//		// then
+
+		// then
 		assertThat(asList(-1, 3, 6), containsInAnyOrder(result.toArray()));
 	}
 

@@ -18,10 +18,11 @@ public class DevSkiller {
 				.filter(entry -> entry.getValue() == numberOfDuplicates)
 				.map(Map.Entry::getKey)
 				.collect(Collectors.toList());
-	}
+
+//		Map<Integer, Integer> counts = new LinkedHashMap<>();
 //		for (Integer value : integers) {
-//			if(value != null){
-//				if(counts.containsKey(value)){
+//			if (value != null) {
+//				if (counts.containsKey(value)) {
 //					counts.put(value, counts.get(value) + 1);
 //				} else {
 //					counts.put(value, 1);
@@ -30,11 +31,11 @@ public class DevSkiller {
 //			}
 //		}
 //		List<Integer> result = new ArrayList<>();
-//		for(Map.Entry<Integer, Integer> entry : counts.entrySet()){
-//			if(entry.getValue() == numberOfDuplicates){
+//		for (Map.Entry<Integer, Integer> entry : counts.entrySet()) {
+//			if (entry.getValue() == numberOfDuplicates) {
 //				result.add(entry.getKey());
 //			}
 //		}
 //		return result;
-
+	}
 }
