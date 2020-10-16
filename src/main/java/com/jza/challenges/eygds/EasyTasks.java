@@ -1,6 +1,7 @@
 package com.jza.challenges.eygds;
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 public class EasyTasks {
 
@@ -24,7 +25,21 @@ public class EasyTasks {
 	 */
 
 	public static int organizeWork(int N, int arr[]) {
-		return 0;
+		Arrays.sort(arr);
+		PriorityQueue<Integer> queue = new PriorityQueue<>();
+		for (int i = 0; i < N; i++) {
+			queue.add(0);
+		}
+		for (int i = arr.length - 1; i >= 0; i--) {
+			int lowest = queue.poll();
+			queue.add(arr[i] + lowest);
+		}
+		int max = Integer.MIN_VALUE;
+		while (!queue.isEmpty()) {
+			System.out.println(queue.peek());
+			max = Math.max(max, queue.poll());
+		}
+		return max;
 	}
 
 	public static int rearrange(int n) {

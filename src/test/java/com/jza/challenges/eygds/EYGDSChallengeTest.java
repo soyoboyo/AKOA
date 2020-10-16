@@ -29,6 +29,18 @@ class EYGDSChallengeTest {
 	}
 
 	@Test
+	public void test3OrganizeWork() {
+		int[] arr = {2, 5, 7, 1};
+		assertEquals(8, EasyTasks.organizeWork(2, arr));
+	}
+
+	@Test
+	public void test4OrganizeWork() {
+		int[] arr = {5, 6, 4, 8, 6, 4, 6, 6, 18, 13, 8, 19, 17, 15, 18};
+		assertEquals(19, EasyTasks.organizeWork(10, arr));
+	}
+
+	@Test
 	public void test1IsEgoistic() {
 		assertEquals(true, EasyTasks.isEgoistic("25"));
 	}
