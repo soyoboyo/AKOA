@@ -1,4 +1,4 @@
-package com.jza.challenges.eygds;
+package com.jza.challengerocket.eygds;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;
@@ -23,7 +23,6 @@ public class EasyTasks {
 
 		Which give totla completion time of 4 units.
 	 */
-
 	public static int organizeWork(int N, int arr[]) {
 		Arrays.sort(arr);
 		PriorityQueue<Integer> queue = new PriorityQueue<>();
@@ -42,6 +41,10 @@ public class EasyTasks {
 		return max;
 	}
 
+	/*
+	Your task is to write a code that turns the given number into its best (highest) version by just rearranging its digits.
+	This time the number is given in the traditional form as a number.
+	 */
 	public static int rearrange(int n) {
 		char[] digits = String.valueOf(n).toCharArray();
 		Arrays.sort(digits);
@@ -52,10 +55,18 @@ public class EasyTasks {
 		return Integer.parseInt(result.toString());
 	}
 
+
+	/*
+	By egoistic number we consider a number, whose last digit is the same as the last digit of square of this number.
+	Our client is ver serious business entity, so be prepared for very long number given in the form of a string .
+	 */
 	public static boolean isEgoistic(String number) {
-		int last = Character.getNumericValue(number.charAt(number.length() - 1));
-		String sqr = String.valueOf(last * last);
-		return Character.getNumericValue(sqr.charAt(sqr.length() - 1)) == last;
+		char last = number.charAt(number.length() - 1);
+		return last == '1' || last == '5' || last == '6' || last == '0';
 	}
+
+//	int last = Character.getNumericValue(number.charAt(number.length() - 1));
+//	String sqr = String.valueOf(last * last);
+//		return Character.getNumericValue(sqr.charAt(sqr.length() - 1)) == last;
 
 }

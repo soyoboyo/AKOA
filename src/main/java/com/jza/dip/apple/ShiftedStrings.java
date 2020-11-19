@@ -1,7 +1,6 @@
 package com.jza.dip.apple;
 
 public class ShiftedStrings {
-
 	public static boolean isShifted(String a, String b) {
 		int len = a.length();
 		if (len != b.length()) {

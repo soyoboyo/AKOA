@@ -1,5 +1,6 @@
 package com.jza;
 
+import com.jza.recruitment.DevSkiller;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

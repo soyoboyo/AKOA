@@ -1,9 +1,8 @@
 package com.jza.kickstart.y20;
 
-import com.jza.kickstart.KickstartFileReader;
-
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
@@ -12,7 +11,7 @@ import java.util.Queue;
 public class ATMQueue {
 
 	public static void solution() throws IOException {
-		BufferedReader br = KickstartFileReader.readInput();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int numberOfTests = Integer.parseInt(br.readLine());
 		for (int i = 1; i <= numberOfTests; i++) {
 			String peopleAndLimitString = br.readLine();

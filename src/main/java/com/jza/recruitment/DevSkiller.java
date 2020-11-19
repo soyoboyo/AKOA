@@ -1,4 +1,4 @@
-package com.jza;
+package com.jza.recruitment;
 
 import java.util.LinkedHashMap;
 import java.util.List;
