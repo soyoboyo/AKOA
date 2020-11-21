@@ -65,4 +65,32 @@ public class XFAANGhackerrank {
 		return result;
 	}
 
+
+	// live coding
+	// "caaabbacc" -> "aaabba"
+	public static int getSubstring(String s) {
+		Map<Character, Integer> charCount = new HashMap<>();
+		int max = 0;
+		int start = 0;
+		int end = 0;
+		charCount.put(s.charAt(0), 1);
+		while (start <= end && end < s.length()) {
+			if (charCount.size() <= 2) {
+				max = Math.max(max, end - start + 1);
+				end++;
+				if (end < s.length()) {
+					charCount.merge(s.charAt(end), 1, Integer::sum);
+				}
+			} else if (charCount.size() > 2) {
+				Character c = s.charAt(start);
+				if (charCount.get(c) > 1) {
+					charCount.merge(c, -1, Integer::sum);
+				} else {
+					charCount.remove(c);
+				}
+				start++;
+			}
+		}
+		return max;
+	}
 }
