@@ -2,6 +2,7 @@ package com.jza.snippets;
 
 import java.util.*;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.summingInt;
@@ -9,7 +10,7 @@ import static java.util.stream.Collectors.summingInt;
 public class CodeSnippets {
 
 	public static void snippet() {
-		int[] array = {1, 2, 3};
+		int[] array = {1, 2, 3, 1};
 		List<Integer> input = new ArrayList<>();
 
 		Map<Integer, Integer> collect =
@@ -28,5 +29,15 @@ public class CodeSnippets {
 		map.put("l3", l1);
 		System.out.println(map.values().stream().mapToInt(List::size).sum());
 	}
-
+	public int numJewelsInStones(String jewels, String stones) {
+		int count = 0;
+		Set<Character> jewelsSet = jewels.chars()
+				.mapToObj(e->(char)e).collect(Collectors.toSet());
+		for(char stone : stones.toCharArray()){
+			if(jewelsSet.contains(stone)){
+				count++;
+			}
+		}
+		return count;
+	}
 }
