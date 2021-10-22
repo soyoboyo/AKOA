@@ -1,5 +1,6 @@
 package com.jza;
 
+import com.jza.algoexpert.Algo12;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.jza;
+package com.jza.algoexpert;
 
 import java.util.*;
 import java.util.stream.IntStream;
